@@ -1,0 +1,124 @@
+.main_heading{
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.body{
+    background: #F2F7FF;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+
+}
+.main{
+    border: 2px solid black;
+    background-color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 0.5rem;
+
+}
+.filter_icon{
+    display: flex;
+    padding-left: 3rem;
+
+    .slider{
+        margin-top: 1.6rem;
+        margin-left: 0.5rem;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.filters{
+    margin-top: 1rem;
+    display: flex;
+    gap: 4rem;
+    padding-left: 3rem;
+    
+   
+}
+.extra{
+    background: #E9EBF8;
+    display: flex;
+    height: 2.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    img{
+        width: 31px;
+        height: 31px;
+       
+    }
+    li{
+        margin-left: 0.1rem;
+        margin-top: 0.2rem;
+    }
+
+}
+.program_carts{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+.each{
+    width: 39.3rem;
+    height: 18rem;
+    background-color: #ffffff;
+    gap: 0.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.fav{
+    width: 31px;
+    height: 31px;
+    margin-top: 0.6rem;
+    margin-left: 5rem;
+}
+.carts_content{
+    display: flex;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+}
+.carts_content_para{
+    text-align: start;
+    font-size: 0.9rem;
+    margin-left: -4rem;
+    margin-top: 0.3rem;
+
+}
+label{
+    margin-top: 0.2rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+#footer{
+    margin-top: 1rem;
+}
+.footer_left{
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 0rem;
+    text-align: left;
+    margin-left: -4rem;
+    color: #646464;
+    
+}
+.footer_right{
+    font-size: 11px;
+    font-weight: 500;
+    color: #646464;
+    margin-top: 0rem;
+    margin-left: 4.5rem;
+}

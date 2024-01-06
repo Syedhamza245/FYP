@@ -1,0 +1,76 @@
+.whatwedo{
+    height: 28.75rem;
+    background-image: url('../source/whatwedo.png');
+    background-size: cover;
+    color: #ffffff;
+}
+.whatwedo_h1{
+    padding-top: 7rem;
+}
+.whatwedo_btn{
+    width: 14rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    font-family: 'Poppins', cursive;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-left: 35rem;
+}
+.whatwedo_btn:hover{
+    background-color: #2B7FFF;
+    color:#ffffff;
+    border-style: none;
+}
+.div_para{
+background: #F2F7FF;
+padding: 1rem;
+}
+.para_text{
+    margin-bottom: 2rem;
+}
+
+.founders{
+    background: #E9EBF8;
+    padding: 1rem;
+    padding-bottom: 3rem;
+
+}
+.pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 4rem;
+}
+
+.pic_inn{
+    width: 14.6875;
+    height: 14.6875;
+}
+.position{
+    margin-top: 0rem;
+}
+#meet{
+    width: 15rem;
+    margin-top: 6rem;
+    margin-left: 33rem;
+}
+#meet:hover{
+    background-color: #ffffff;
+    color: #2B7FFF;
+    border: 1px solid #2B7FFF;
+    font-weight: 500;
+    width: 20rem;
+    margin-left: 30rem;
+}
+.ourmission{
+    background: #F2F7FF;
+    padding: 1rem;
+}
+span{
+    font-weight: 1000;
+}
+.mission_cont{
+    text-align: start;
+}

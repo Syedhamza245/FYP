@@ -1,0 +1,39 @@
+/* 214444 */
+
+.footer{
+    display: flex;
+    gap: 15rem;
+    padding-left: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color: #2B7FFF;
+    color: #ffffff;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+}
+.footer_icon{
+    width: 22px;
+    height: 20px;
+    margin-top: 1.5rem;
+}
+.footer_ul{
+    margin-top: 4rem;
+}
+.footer_h3{
+    text-align: start;
+}
+.footer_li{
+    font-size: 15px;
+    font-weight: 50;
+}
+.copyright{
+    display: flex;
+    gap: 22rem;
+    background-color: #ffffff;
+}
+.copyright_p{
+    margin: 0.5rem;
+}

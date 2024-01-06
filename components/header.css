@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+/* <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link> */
+
+
+.header{
+    height: 5rem;
+    background-color:#ffffff;
+    display: flex;
+    margin: 0rem 0rem 0rem 0rem;
+    
+}
+.nav{
+    list-style: none;
+    display: flex;
+    margin: 1.3rem 0rem 0rem 6rem;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+    display: flex;
+    margin: 1.5rem 0rem 0rem 0.7rem;
+    font-size: 1.2rem;
+    gap: 0.2rem;
+    font-family: 'Poppins', cursive;
+    font-weight: 500;
+
+}
+.icon{
+    margin: 0rem 0rem 0rem 0rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logo{
+    width: 16rem;
+    height: 4.3rem;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+}
+
