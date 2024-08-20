@@ -58,7 +58,7 @@ const Signin = () => {
         <button type="submit" className="signin-button">Login</button>
       </form>
       {message && <p className="signin-message">{message}</p>}
-      <p>Dont't have an Account, Register Yourself : <a className='register' href="http://localhost:3000/register">Register</a></p>
+      <p>Dont't have an Account, Register Yourself : <a className='register' href="https://fyp-frontend1.onrender.com/register">Register</a></p>
     </div>
   );
 };
