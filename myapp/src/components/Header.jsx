@@ -12,19 +12,19 @@ export default function Header() {
     <div className="outer">
       
       <div className="header">
-        <a href="http://localhost:3000/home">
+        <a href="https://fyp-frontend1.onrender.com/home">
         <img src={logo} alt="" className="logo"  width='130px' height='42px'/></a>
         <ul className="nav">
-          <a href="http://localhost:3000/whatwedo">
+          <a href="https://fyp-frontend1.onrender.com/whatwedo">
             {" "}
             <li>What we do? </li>{" "}
           </a>
-          <a href="http://localhost:3000/destination">
+          <a href="https://fyp-frontend1.onrender.com/destination">
             {" "}
             <li>Destination</li>{" "}
           </a>
           
-          <a href="http://localhost:3000/filter">
+          <a href="https://fyp-frontend1.onrender.com/filter">
             {" "}
             <li>
               <img className="icon" src={explore1} />
@@ -32,21 +32,21 @@ export default function Header() {
             </li>
           </a>
           
-          <a href="http://localhost:3000/contactus">
+          <a href="https://fyp-frontend1.onrender.com/contactus">
             {" "}
             <li>
               <img className="icon" src={wishlist} alt="" />
               Contact Us
             </li>
           </a>
-          <a href="http://localhost:3000/FAQ's">
+          <a href="https://fyp-frontend1.onrender.com/FAQ's">
             {" "}
             <li>
               <img className="icon" src={faq} alt="" />
               FAQ'S
             </li>
           </a>
-          <a href="http://localhost:3000/Logout">
+          <a href="https://fyp-frontend1.onrender.com/Logout">
             {" "}
             <li className="s_in">
               <img className="icon" src={signin} alt="" />
