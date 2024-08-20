@@ -113,7 +113,7 @@ app.get('/api/user', authenticateJWT, async (req, res) => {
 
 // Additional API
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://fyp-frontend1.onrender.com/',
   credentials: true,
 }));
 
