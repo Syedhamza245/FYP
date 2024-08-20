@@ -8,7 +8,10 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: '*', // Yeh sab origins allow karega, lekin production mein secure method istimaal karein.
+}));
+
 
 const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET;
