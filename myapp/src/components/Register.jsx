@@ -9,7 +9,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/register', {
+      const response = await fetch('https://fyp-backend1-qz2b.onrender.com/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
