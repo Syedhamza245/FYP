@@ -115,10 +115,7 @@ app.get('/api/user', authenticateJWT, async (req, res) => {
 });
 
 // Additional API
-app.use(cors({
-  origin: 'https://fyp-frontend1.onrender.com/',
-  credentials: true,
-}));
+
 
 const canadaData = require('./canada.json');
 const australiaData = require('./aus.json');
