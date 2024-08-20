@@ -32,7 +32,7 @@ export default function Home() {
     if (!token) {
       navigate('/signin');
     } else {
-      fetch('http://localhost:5000/api/user', {
+      fetch('https://fyp-backend1-qz2b.onrender.com/api/user', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
