@@ -108,7 +108,7 @@ export default function Destination() {
                 Interested in studing <br /> abroad with Edugate?
               </span>
             </div>
-            <div className="second-sectionForm">
+{/*             <div className="second-sectionForm">
               <form id="application-form">
                 <div class="form-group">
                   <label for="first-name">First Name *</label>
@@ -160,7 +160,7 @@ export default function Destination() {
                 </div>
                 <button className="primary-button" type="submit">Apply Now</button>
               </form>
-            </div>
+            </div> */}
 
             <div className="Ads">
               <img src={Advertisement} alt="" width="350px" />
