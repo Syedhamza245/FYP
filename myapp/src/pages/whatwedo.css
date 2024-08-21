@@ -58,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
     gap: 1rem;
 }
 .four-whatwedo p{
@@ -66,4 +66,8 @@
 }
 .four-whatwedo h1{
     padding-bottom: 2rem;
+}
+.secondary-button-whatwedo{
+    padding: 0.8rem;
+    background-color: var(--lightblue);
 }
