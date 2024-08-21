@@ -108,7 +108,7 @@ export default function Destination() {
                 Interested in studing <br /> abroad with Edugate?
               </span>
             </div>
-            <div className="second-sectionForm">
+{/*             <div className="second-sectionForm">
               <form id="application-form">
                 <div class="form-group">
                   <label for="first-name">First Name *</label>
@@ -118,7 +118,7 @@ export default function Destination() {
                     name="first_name"
                     required
                   />
-                </div>
+                </div> */}
                 <div class="form-group">
                   <label for="last-name">Last Name *</label>
                   <input type="text" id="last-name" name="last_name" required />
