@@ -14,6 +14,9 @@ import Chatbot from './components/Chatbot.jsx';
 function App() {
   const location = useLocation();  // Get the current route
 
+  // List of paths where the chatbot should be hidden
+  const hideChatbotPaths = ['/signin', '/register'];
+
   return (
     <>
       <Routes>
@@ -30,7 +33,7 @@ function App() {
         <Route path="/FAQ's" element={<PrivateRoute element={<Faqs />} />} />
       </Routes>
       {/* Conditionally render Chatbot based on the current route */}
-      {location.pathname !== '/signin' && location.pathname !== '/register' && (
+      {!hideChatbotPaths.includes(location.pathname) && (
         <div className="chatbot">
           <Chatbot />
         </div>
