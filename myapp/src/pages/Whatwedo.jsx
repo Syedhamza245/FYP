@@ -20,7 +20,7 @@ export default function Whatwedo() {
             the value of international experiences - both for the individual
             student and for the society.
           </p>
-          <button className="secondary-button">
+          <button className="secondary-button-whatwedo">
             Our Mission & Core values
           </button>
         </div>
