@@ -1,4 +1,5 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route, useLocation, matchPath } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Whatwedo from './pages/Whatwedo.jsx';
 import Filter from './pages/Filter.jsx';
@@ -14,8 +15,11 @@ import Chatbot from './components/Chatbot.jsx';
 function App() {
   const location = useLocation();  // Get the current route
 
-  // List of paths where the chatbot should be hidden
+  // Define paths where the Chatbot should be hidden
   const hideChatbotPaths = ['/signin', '/register'];
+
+  // Check if the current path matches any of the paths where the chatbot should be hidden
+  const shouldHideChatbot = hideChatbotPaths.some(path => matchPath(path, location.pathname));
 
   return (
     <>
@@ -24,7 +28,6 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
-        {/* Use PrivateRoute for protected routes */}
         <Route path="/home" element={<PrivateRoute element={<Home />} />} />
         <Route path="/whatwedo" element={<PrivateRoute element={<Whatwedo />} />} />
         <Route path="/filter" element={<PrivateRoute element={<Filter />} />} />
@@ -33,7 +36,7 @@ function App() {
         <Route path="/FAQ's" element={<PrivateRoute element={<Faqs />} />} />
       </Routes>
       {/* Conditionally render Chatbot based on the current route */}
-      {!hideChatbotPaths.includes(location.pathname) && (
+      {!shouldHideChatbot && (
         <div className="chatbot">
           <Chatbot />
         </div>
