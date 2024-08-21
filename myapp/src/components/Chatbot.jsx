@@ -1,35 +1,37 @@
-import React, { useEffect,useRef } from "react";
+import React, { useEffect } from 'react';
 
 const Chatbot = () => {
-  const scriptLoadedRef = useRef(false); // Ref to track script loading
-
   useEffect(() => {
-    // Only load the script if it hasn't been loaded already
-    if (!scriptLoadedRef.current) {
-      const script = document.createElement("script");
-      script.src = "https://www.chatbase.co/embed.min.js";
-      script.setAttribute("chatbotId", "v9AB6UQzDHEmsSEoGNwk6");
-      script.setAttribute("domain", "www.chatbase.co");
-      script.defer = true;
+    // Create and append the script for Chatbase
+    const script = document.createElement('script');
+    script.src = "https://www.chatbase.co/embed.min.js";
+    script.defer = true;
+    script.setAttribute("chatbotId", "6ppxknfiKypIWtREpl5Qj");
+    script.setAttribute("domain", "www.chatbase.co");
+    document.body.appendChild(script);
 
-      document.body.appendChild(script);
+    // Set the embedded chatbot configuration
+    window.embeddedChatbotConfig = {
+      chatbotId: "6ppxknfiKypIWtREpl5Qj",
+      domain: "www.chatbase.co",
+    };
 
-      scriptLoadedRef.current = true; // Mark the script as loaded
-
-      return () => {
-        document.body.removeChild(script); // Clean up the script when component unmounts
-      };
-    }
+    // Clean up the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
-
   return (
-    <iframe
-      src="https://www.chatbase.co/chatbot-iframe/v9AB6UQzDHEmsSEoGNwk6"
-      width="100%"
-      style={{ height: "700px", border: "none" }}
-      title="Chatbot"
-    ></iframe>
+    <div style={{ width: '100%', height: '100%', minHeight: '700px' }}>
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/6ppxknfiKypIWtREpl5Qj"
+        width="100%"
+        style={{ height: '100%', minHeight: '700px' }}
+        frameBorder="0"
+        title="Chatbase Chatbot"
+      ></iframe>
+    </div>
   );
 };
 
