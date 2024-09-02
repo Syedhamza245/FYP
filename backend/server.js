@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 const app = express();
 
 app.use(cors({
-  origin: '*', // Yeh sab origins allow karega, lekin production mein secure method istimaal karein.
+  origin: '*', 
 }));
 
 
